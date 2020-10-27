@@ -3,6 +3,10 @@ $(document).ready(function() {
     event.preventDefault();
     let badThings = [];
     let goodThings = [];
+    $("#finalSymptoms").html("");
+    $("#finalCoping").html("");
+    $("#suggestions").hide();
+    $("#noProblems").hide();
 
 
     userInput1 = $("input:checkbox[name=warningSigns]:checked").each(function() {
