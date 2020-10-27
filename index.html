@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Stress Test</title>
+</head>
+<body>
+  <div class="container">
+    <form id="stressSurvey">
+      <h1>Please complete the following questionnaire:</h1>
+      <h4>Please check all that apply:</h4>
+      <!-- Warning Signs -->
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="warningSigns" value="Depression" id="warn1">
+        <label class="form-check-label" for="warn1">Depression</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="warningSigns" value="Weight Gain" id="warn2">
+        <label class="form-check-label" for="warn2">Weight Gain</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="warningSigns" value="Lack of SLeep" id="warn3">
+        <label class="form-check-label" for="warn3">Loss of Sleep</label>
+      </div>
+
+      <!-- Symptoms -->
+      <h4>Do you experience any of the following?</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="symptoms" value="High Blood Pressure" id="symptoms1">
+        <label class="form-check-label" for="symptoms1">High Blood Pressure</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="symptoms" value="Anxiety" id="symptoms2">
+        <label class="form-check-label" for="symptoms2">Anxiety</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="symptoms" value="Loss of Hair">
+        <label class="form-check-label" for="symptoms3">Hair Loss</label>
+      </div>
+
+      <!-- Coping -->
+      <h4>Do you do any of the following?</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="coping" value="Meditation" id="cope1">Meditation
+        <label class="form-check-label" for="cope1">Meditation</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="coping" value="Excercise" id="cope2">Excercise
+        <label class="form-check-label" for="cope2">Excercise</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="coping" value="Healthy Eating" id="cope3">
+        <label class="form-check-label" for="cope3">Healthy Eating</label>
+      </div>
+
+      <button type="submit" class="btn btn-outline-primary">Click me</button>
+    </form>
+    <div id="suggestions">
+      <p>You mentioned having the following symptoms/warning signs of stress:</p>
+      <ul id="finalSymptoms">
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
